@@ -1,0 +1,24 @@
+server:
+  port: 8001
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: page-query
+  jackson:
+    deserialization:
+      adjust_dates_to_context_time_zone: false
+    generator:
+      WRITE_BIGDECIMAL_AS_PLAIN: true #Feature that determines whether BigDecimal entries are serialized using BigDecimal.toPlainString() to prevent values to be written using scientific notation.
+    time-zone: GMT+8
+  datasource:
+    # 配置数据源
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mysql?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

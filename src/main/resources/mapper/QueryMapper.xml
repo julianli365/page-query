@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.julian.page.mapper.QueryMapper">
+
+
+    <select id="queryPage" resultType="com.julian.page.vo.resp.QueryResp">
+        select id, recordNo from (
+        select 1 id, 'RN001' recordNo from dual
+        union
+        select 2 id, 'RN002' recordNo from dual
+        union
+        select 2 id, 'RN003' recordNo from dual
+        union
+        select 4 id, 'RN004' recordNo from dual
+        union
+        select 5 id, 'RN005' recordNo from dual
+        union
+        select 6 id, 'RN006' recordNo from dual) t
+        <where>
+            <if test="req.recordNo != null and req.recordNo != ''">
+                instr(recordNo, #{req.recordNo}) > 0
+            </if>
+        </where>
+    </select>
+
+
+</mapper>
