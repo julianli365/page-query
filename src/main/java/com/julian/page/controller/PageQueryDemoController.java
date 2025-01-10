@@ -6,7 +6,6 @@ import com.julian.page.common.PageParam;
 import com.julian.page.common.Result;
 import com.julian.page.service.PageQueryDemoService;
 import com.julian.page.vo.req.QueryReq;
-import com.julian.page.vo.req.QueryReqExt;
 import com.julian.page.vo.resp.QueryResp;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

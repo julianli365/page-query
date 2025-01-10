@@ -4,7 +4,6 @@ package com.julian.page.service;
 import com.julian.page.common.PageData;
 import com.julian.page.common.PageParam;
 import com.julian.page.vo.req.QueryReq;
-import com.julian.page.vo.req.QueryReqExt;
 import com.julian.page.vo.resp.QueryResp;
 
 /**

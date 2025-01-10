@@ -8,7 +8,6 @@ import com.julian.page.common.PageParam;
 import com.julian.page.mapper.QueryMapper;
 import com.julian.page.service.PageQueryDemoService;
 import com.julian.page.vo.req.QueryReq;
-import com.julian.page.vo.req.QueryReqExt;
 import com.julian.page.vo.resp.QueryResp;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
