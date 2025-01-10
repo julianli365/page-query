@@ -40,9 +40,9 @@
 > curl --location --request GET "http://localhost:8001/demo/query/list?pageNumber=1&pageSize=5&searchCount=1&sort=id,asc,recordNo,desc"<br>
 > <br>效果同：<br>
 > curl --location --request GET "http://localhost:8001/demo/query/list?pageNumber=1&pageSize=5&sort=id,recordNo,desc"<br><br>
-> 提示：CMD窗口执行curl命令，或在浏览器地址栏粘贴http地址测试
+> 提示：启动项目后，在CMD窗口执行curl命令，或在浏览器地址栏粘贴http地址测试
 
-6. 结果集示例
+5. 结果集示例
 > data：业务数据集合<br>
 > page：分页信息，总记录数6，总页数2，当前指定页1，当前每页条数5
 ```
